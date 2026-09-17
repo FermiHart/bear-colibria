@@ -68,6 +68,10 @@ has no edge; risk blends are unqualified; no public beta is claimed. See
 ## Layout
 
 ```
+lck/                       Forecasting core, durable sessions, journals, adapters.
+scripts/                   Observer pilots, exceedance service, validator.
+experiments/               Frozen CDF artifact + registered plans.
+EXCEEDANCE_PRODUCT_EN.md   Product guide (English).
 README.md                  This page.
 LICENSE                    BSD-3-Clause.
 SPEC.md                    Normative spec: forecast, calibration, issuance.
@@ -78,11 +82,12 @@ CHANGELOG.md               Release history.
 RELEASING.md               Curation procedure (the anti-incident checklist).
 ARTIFACTS.manifest         Release contents with SHA256.
 SHA256SUMS                 Checksums of the release zip.
-Makefile                   make verify — checksums, manifest, extract, smoke.
+Makefile                   make verify — tree, checksums, manifest, smoke.
 dist/exceedance_product_v1.zip
-                           The product: 26 files (lck/ core, scripts/,
-                           frozen CDF artifact, docs) + MANIFEST.json.
-                           No datasets, credentials, binaries, or logs.
+                           Convenience build of the tree above (26 files +
+                           MANIFEST.json). No datasets, credentials, binaries,
+                           or logs. The zip is generated from this tree; CI
+                           proves they match.
 ```
 
 ---

@@ -12,3 +12,7 @@ Makefile
 .github/workflows/verify.yml
 readme/hero-proof-geometry.svg
 dist/exceedance_product_v1.zip
+lck/
+scripts/
+experiments/
+EXCEEDANCE_PRODUCT_EN.md
