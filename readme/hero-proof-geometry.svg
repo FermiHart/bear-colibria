@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" font-family="monospace">
+<rect width="1200" height="600" fill="#0a0a0f"/>
+<!-- proof lattice: forecast -> commit -> ledger -->
+<g stroke="#2a2a3a" stroke-width="1">
+<line x1="0" y1="150" x2="1200" y2="150"/><line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="450" x2="1200" y2="450"/>
+<line x1="200" y1="0" x2="200" y2="600"/><line x1="400" y1="0" x2="400" y2="600"/><line x1="600" y1="0" x2="600" y2="600"/><line x1="800" y1="0" x2="800" y2="600"/><line x1="1000" y1="0" x2="1000" y2="600"/>
+</g>
+<!-- three committed states -->
+<g fill="none" stroke="#e8b34b" stroke-width="2">
+<circle cx="300" cy="300" r="90"/><circle cx="300" cy="300" r="64"/><circle cx="300" cy="300" r="38"/>
+</g>
+<g fill="none" stroke="#4bd1a0" stroke-width="2">
+<circle cx="600" cy="300" r="90"/><circle cx="600" cy="300" r="64"/><circle cx="600" cy="300" r="38"/>
+</g>
+<g fill="none" stroke="#7aa2ff" stroke-width="2">
+<circle cx="900" cy="300" r="90"/><circle cx="900" cy="300" r="64"/><circle cx="900" cy="300" r="38"/>
+</g>
+<!-- hash chain links -->
+<g stroke="#e8b34b" stroke-width="3">
+<line x1="392" y1="300" x2="508" y2="300"/>
+</g>
+<g stroke="#4bd1a0" stroke-width="3">
+<line x1="692" y1="300" x2="808" y2="300"/>
+</g>
+<!-- cores -->
+<circle cx="300" cy="300" r="10" fill="#e8b34b"/>
+<circle cx="600" cy="300" r="10" fill="#4bd1a0"/>
+<circle cx="900" cy="300" r="10" fill="#7aa2ff"/>
+<!-- labels -->
+<g fill="#c9c9d6" font-size="22" text-anchor="middle">
+<text x="300" y="440">FORECAST</text>
+<text x="600" y="440">COMMIT</text>
+<text x="900" y="440">LEDGER</text>
+</g>
+<g fill="#6a6a7a" font-size="16" text-anchor="middle">
+<text x="300" y="466">P(y &gt; C) + interval</text>
+<text x="600" y="466">fsync per event</text>
+<text x="900" y="466">hash chain, fails closed</text>
+<text x="450" y="270">sha256 →</text>
+<text x="750" y="270">sha256 →</text>
+</g>
+<g fill="#e8b34b" font-size="26" text-anchor="middle">
+<text x="600" y="110">WHAT THE SYSTEM KNEW, AND WHEN — PROVABLE</text>
+</g>
+</svg>

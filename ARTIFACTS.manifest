@@ -1,0 +1,14 @@
+README.md
+LICENSE
+SPEC.md
+STATUS.md
+SECURITY.md
+CONTRIBUTING.md
+CHANGELOG.md
+RELEASING.md
+ARTIFACTS.manifest
+SHA256SUMS
+Makefile
+.github/workflows/verify.yml
+readme/hero-proof-geometry.svg
+dist/exceedance_product_v1.zip
